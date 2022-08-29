@@ -227,8 +227,8 @@ YYTextViewDelegate
         textView.delegate = self;
         textView.attributedText = self.contentText;
         //添加点击修改点击位置单词背景
-//        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
-//        [textView addGestureRecognizer:tap];
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+        [textView addGestureRecognizer:tap];
         _textView = textView;
     }
     return _textView;
